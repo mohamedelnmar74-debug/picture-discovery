@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>رحلة إلى الدولة الإسلامية: الأمويون والعباسيون</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07140f;--p:#0f2a20;--ink:#e8f5ee;--ac:#3ddc84;--mu:#9cc4b0;--g:linear-gradient(135deg,#1fa85a,#3ddc84);--bt:#04210f;--ln:rgba(255,255,255,.12);color-scheme:dark}
+[data-theme=light]{--bg:#fff4e6;--p:#fff;--ink:#3a2412;--ac:#e8791a;--mu:#8a6a50;--g:linear-gradient(135deg,#f59b3c,#ffc27a);--bt:#3a1a02;--ln:rgba(120,70,20,.18);color-scheme:light}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font-family:'Cairo',sans-serif;transition:background .4s,color .4s;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(circle at 80% 10%,rgba(61,220,132,.14),transparent 40%),radial-gradient(circle at 10% 90%,rgba(61,220,132,.08),transparent 40%)}
+[data-theme=light] body::before{background:radial-gradient(circle at 80% 10%,rgba(255,190,100,.5),transparent 45%),radial-gradient(circle at 10% 90%,rgba(255,170,120,.35),transparent 45%)}
+.stars{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:radial-gradient(1.5px 1.5px at 20% 30%,#fff,transparent),radial-gradient(1px 1px at 70% 20%,#fff,transparent),radial-gradient(1.5px 1.5px at 50% 70%,#fff,transparent),radial-gradient(1px 1px at 85% 80%,#fff,transparent),radial-gradient(1px 1px at 10% 80%,#fff,transparent);animation:tw 4s ease-in-out infinite alternate;transition:opacity .4s}
+[data-theme=light] .stars{opacity:0}
+@keyframes tw{from{opacity:.3}to{opacity:.9}}
+.bar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 16px;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+.bar b{font-size:15px;white-space:nowrap}#steps{min-width:0}@media(max-width:640px){.bar b{display:none}.bar{padding:8px 10px;gap:6px}.ic{padding:6px 9px}}#vol{min-width:16px;text-align:center;font-weight:700}.mus{display:flex;align-items:center;gap:4px}.ic[aria-pressed=true]{background:var(--g);color:var(--bt)}
+#steps{display:flex;gap:6px;flex:1;justify-content:center;overflow-x:auto}
+#steps button{width:28px;height:28px;border-radius:50%;border:1px solid var(--ln);background:var(--p);color:var(--ink);font:600 12px Cairo;cursor:pointer;flex:none}
+#steps button.on{background:var(--g);color:var(--bt);border-color:transparent}
+#steps button.vis{border-color:var(--ac)}
+.ic{border:1px solid var(--ln);background:var(--p);color:var(--ink);border-radius:999px;padding:6px 12px;font:600 14px Cairo;cursor:pointer}
+main{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:20px 16px 60px}
+.scr{display:none;animation:fi .5s both}.scr.on{display:block}
+@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+h1{font-size:clamp(2rem,7vw,3.4rem);line-height:1.3;margin:10px 0}
+h2{font-size:1.7rem;margin:0 0 14px}h3{margin:0 0 8px}
+.card{background:var(--p);border:1px solid var(--ln);border-radius:20px;padding:20px;box-shadow:0 8px 24px rgba(0,0,0,.12);transition:transform .2s}
+.card:hover{transform:translateY(-3px)}
+.grid{display:grid;gap:14px}
+@media(min-width:700px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}}
+.btn{font:700 16px Cairo;border:0;border-radius:999px;padding:12px 26px;background:var(--g);color:var(--bt);cursor:pointer}
+.btn.gh{background:none;color:var(--ink);border:1px solid var(--ln)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.nav{display:flex;justify-content:space-between;gap:10px;margin-top:24px;flex-wrap:wrap}
+.cover{text-align:center;padding:20px 0}
+.moon{width:150px;height:150px;border-radius:50%;margin:10px auto;background:radial-gradient(circle at 35% 35%,#fff7e0,#d9cfae 60%,#a89d7c);box-shadow:0 0 60px rgba(255,240,200,.45);animation:fl 6s ease-in-out infinite alternate}
+@keyframes fl{to{transform:translateY(-14px)}}
+.lead{color:var(--mu);line-height:2}
+input{width:100%;font:600 18px Cairo;padding:14px;border-radius:14px;border:1px solid var(--ln);background:var(--bg);color:var(--ink);margin:12px 0}
+.err{color:#ff8a7a;font-weight:700;min-height:26px}
+details{background:var(--p);border:1px solid var(--ln);border-radius:16px;padding:14px 18px;margin-bottom:10px}
+summary{font-weight:800;cursor:pointer;font-size:1.05rem}
+details p,details li{line-height:2;color:var(--mu)}
+table{width:100%;border-collapse:collapse;font-size:14px}td,th{border:1px solid var(--ln);padding:8px;text-align:right}th{background:var(--g);color:var(--bt)}
+.tbl{overflow-x:auto}.inf{margin:12px 0;padding:10px;border-radius:14px;background:var(--bg);border:1px solid var(--ln)}.inf small{color:var(--mu)}
+svg text{fill:var(--ink);font:600 13px Cairo}
+.sim{background:#050b18;border-radius:20px;border:1px solid var(--ln);padding:8px}
+.sim svg text{fill:#e8f5ee}
+.ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0}
+.ctl select{font:600 14px Cairo;padding:8px;border-radius:10px;background:var(--p);color:var(--ink);border:1px solid var(--ln)}
+.say{min-height:30px;font-weight:700;color:var(--ac)}
+.chip{font:700 18px Cairo;background:var(--p);color:var(--ink);border:1px solid var(--ln);border-radius:14px;padding:10px 16px;cursor:pointer}
+.opt{display:block;width:100%;text-align:right;font:600 15px Cairo;background:var(--p);color:var(--ink);border:1px solid var(--ln);border-radius:12px;padding:12px;margin:8px 0;cursor:pointer}
+.opt:hover{border-color:var(--ac)}.opt.sel{background:var(--g);color:var(--bt)}.opt.ok{background:#1d7a4a;color:#fff}.opt.no{background:#a3453d;color:#fff}
+.prog{height:10px;border-radius:99px;background:var(--ln);overflow:hidden;margin:10px 0}.prog i{display:block;height:100%;background:var(--g);transition:width .4s}
+ol.ord{list-style:none;padding:0;margin:10px 0}
+ol.ord li{display:flex;gap:8px;align-items:center;background:var(--p);border:1px solid var(--ln);border-radius:12px;padding:8px 12px;margin:6px 0}
+ol.ord li span{flex:1}
+.dots{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.dots button{width:34px;height:34px;border-radius:50%;border:1px solid var(--ln);background:var(--p);color:var(--ink);font:700 13px Cairo;cursor:pointer}.dots .an{background:var(--g);color:var(--bt)}.dots .cur{outline:2px solid var(--ac)}
+.big{font-size:3rem;font-weight:800;color:var(--ac)}
+.tabs{flex-basis:100%;order:3;display:none;gap:6px;justify-content:center}.tabs.show{display:flex}
+.tabs button{flex:1;max-width:260px;white-space:nowrap;font:700 14px Cairo;padding:9px 10px;border-radius:12px;border:1px solid var(--ln);background:var(--p);color:var(--ink);cursor:pointer}
+.tabs button.on{background:var(--g);color:var(--bt);border-color:transparent}
+.qj{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.qj .chip{font-size:15px;padding:8px 14px}
+.gd{display:grid;gap:14px;margin-bottom:14px}
+#s8 ul,#s8 ol.st{line-height:2;color:var(--mu);padding-inline-start:22px;margin:6px 0}#s8 b{color:var(--ink)}
+#toast{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:var(--g);color:var(--bt);font-weight:700;padding:12px 20px;border-radius:999px;z-index:30;display:none;max-width:90vw;text-align:center}
+.mo{display:inline-block;vertical-align:middle}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body data-theme="dark">
+<div class="stars"></div>
+<header class="bar"><b>🌙 رحلة الدولة الإسلامية</b><div id="steps" role="navigation" aria-label="مراحل الرحلة"></div><div class="mus" role="group" aria-label="الموسيقى"><button class="ic" id="mp" aria-pressed="false" aria-label="تشغيل أو إيقاف الموسيقى" title="تشغيل أو إيقاف الموسيقى">🎵</button><button class="ic" id="vm" aria-label="خفض الصوت" title="خفض صوت الموسيقى">➖</button><span id="vol" aria-live="polite">4</span><button class="ic" id="vp" aria-label="رفع الصوت" title="رفع صوت الموسيقى">➕</button></div><button class="ic" id="th" aria-label="تبديل الوضع" title="التبديل بين الوضع الداكن والفاتح">☀️ / 🌙</button><nav class="tabs" id="tabs" aria-label="التبويبات الرئيسية"><button data-t="h" data-go="0">🏠 الصفحة الرئيسية</button><button data-t="c" id="tabC">📚 المحتوى</button><button data-t="i" data-go="8">📖 التعليمات</button></nav></header>
+<main>
+
+<section class="scr cover" id="s0">
+<div class="moon" role="img" aria-label="هلال"></div>
+<h1>رحلة إلى الدولة الإسلامية: الأمويون والعباسيون</h1>
+<p class="lead">اكتشف كيف ازدهرت الحضارة الإسلامية في عصر الأمويين والعباسيين</p>
+<p><b>إعداد الطالبة: هاجر سند محمد عبدالله</b><br><span class="lead">تحت إشراف: د. مروه ود. سميه</span></p>
+<button class="btn" id="cb" data-go="1" style="font-size:20px;padding:16px 40px;margin-top:14px">ابدأ الرحلة التعليمية</button>
+</section>
+
+<section class="scr" id="s1">
+<div class="card" style="max-width:560px;margin:0 auto;text-align:center">
+<div style="font-size:3.5rem">🧑‍🚀</div>
+<h2>مرحبًا بك في رحلتنا الفضائية</h2>
+<p class="lead">قبل أن نبدأ رحلتنا لاكتشاف الدولة الإسلامية في العصرين الأموي والعباسي، أخبرنا باسمك حتى نستطيع تسجيل تقدمك في الأنشطة والاختبارات.</p>
+<label for="nm" class="lead">اسم الطالبة</label>
+<input id="nm" maxlength="40" autocomplete="off" placeholder="اكتب اسمك هنا">
+<div class="err" id="nerr" role="alert"></div>
+<button class="btn" id="login">تسجيل الدخول والبدء</button>
+<p class="lead" style="font-size:13px">بنحفظ اسمك وتقدمك على جهازك فقط، ومفيش كلمة مرور.</p>
+</div>
+<div class="nav"><button class="btn gh" data-go="0">السابق</button></div>
+</section>
+
+<section class="scr" id="s2" data-next="ابدأ تعلم الدرس">
+<h2>درس الدولة الإسلامية (الأمويون – العباسيون)</h2>
+<p id="hi" class="lead" style="font-size:1.2rem"></p>
+<div class="grid g2">
+<div class="card"><h3>🎯 الهدف العام</h3><p class="lead">أن يتعرف الطالب الدولة الإسلامية في العصرين الأموي والعباسي، وأسباب ازدهار الحضارة وسقوط الدولتين.</p></div>
+<div class="card"><h3>🧠 الأهداف المعرفية</h3><ul class="lead"><li>أن يشرح الطالب دور بعض الخلفاء الأمويين والعباسيين في ازدهار الحضارة الإسلامية.</li><li>أن يتعرف الطالب ملامح النهضة العمرانية في العصرين.</li><li>أن يستنتج الطالب أسباب سقوط الدولتين الأموية والعباسية.</li></ul></div>
+<div class="card"><h3>💚 الأهداف الوجدانية</h3><ul class="lead"><li>أن يعبر الطالب عن تقديره لدور الخلفاء في خدمة الإسلام وازدهار العلوم.</li><li>أن يقتدي الطالب بعدل عمر بن عبد العزيز.</li><li>أن يعتز الطالب بالحضارة الإسلامية.</li></ul></div>
+<div class="card"><h3>🛠️ الأهداف المهارية</h3><ul class="lead"><li>أن يوضح الطالب كيف انتقلت الخلافة من الأمويين إلى العباسيين.</li><li>أن يرتّب الطالب الخلفاء ترتيبًا زمنيًا.</li><li>أن يقارن الطالب بين جهود الخلفاء.</li></ul></div>
+</div>
+</section>
+
+<section class="scr" id="s3" data-next="شاهد الخط الزمني">
+<h2>المحتوى العلمي</h2>
+<div id="units"></div>
+</section>
+
+<section class="scr" id="s4" data-next="هيا نلعب ونتعلم">
+<h2>رحلة عبر الزمن مع الخلفاء</h2>
+<div class="sim" style="padding:16px"><div id="dots" style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-bottom:12px"></div><div class="card" id="tc"></div></div>
+<div class="say" id="say" aria-live="polite"></div>
+<div class="ctl">
+<button class="btn" id="play">تشغيل الخط الزمني</button><button class="btn gh" id="pause">إيقاف</button><button class="btn gh" id="rst">إعادة من البداية</button>
+<label>السرعة <input type="range" id="spd" min="1" max="5" value="2" style="width:100px;display:inline;margin:0"></label>
+<select id="typ" aria-label="العصر"><option value="all">كل العصور</option><option value="أموي">العصر الأموي</option><option value="عباسي">العصر العباسي</option></select>
+</div>
+<p class="lead" style="font-size:13px">اضغط أي رقم لتنتقل إلى الخليفة أو الحدث.</p>
+</section>
+
+<section class="scr" id="s5" data-next="انتقل إلى الاختبار">
+<h2>مغامرة مستكشف التاريخ</h2>
+<div class="prog"><i id="gp"></i></div>
+<div class="card" id="gbox"></div>
+<p class="lead" id="gsum"></p>
+<div class="card" style="margin-top:14px"><h3>🏆 لوحة الصدارة</h3><div id="lb2"></div></div>
+</section>
+
+<section class="scr" id="s6">
+<h2>اختبر معلوماتك عن الدولة الأموية والعباسية</h2>
+<p class="lead" id="qn"></p>
+<div class="prog"><i id="qp"></i></div>
+<div class="dots" id="qd"></div>
+<div class="card" id="qb"></div>
+<div class="nav"><button class="btn gh" id="qprev">السابق</button><span id="qwarn" class="err"></span><button class="btn" id="qnext">التالي</button></div>
+<div class="nav"><button class="btn gh" data-go="5">العودة للعبة</button></div>
+</section>
+
+<section class="scr" id="s7">
+<div class="card" style="text-align:center"><div style="font-size:3rem" id="cel">🏆</div><h2>أحسنت يا مستكشف الفضاء!</h2><p id="rn" style="font-weight:800;font-size:1.2rem"></p><div class="big" id="rs"></div><p id="rm" class="lead"></p></div>
+<div class="grid g3" style="margin-top:14px" id="rstats"></div>
+<div class="card" style="margin-top:14px"><h3>تقييم الفهم</h3><p id="rev" class="lead"></p><h3>أجزاء تستحق المراجعة</h3><p id="rec" class="lead"></p><h3>ملخص ما تعلمته</h3><p class="lead">قامت الدولة الأموية (٤١–١٣٢هـ) بعد الخلفاء الراشدين وازدهرت بالفتوحات والعمارة، ثم قامت الدولة العباسية (١٣٢–٦٥٦هـ) وبلغت قمتها في العلم والترجمة. وسقطت الدولتان بسبب ضعف الخلفاء والصراع على الحكم، وتعلمنا أن التقدم يأتي بالعدل والاجتهاد.</p></div>
+<div class="card" style="margin-top:14px"><h3>🏆 لوحة الصدارة</h3><div id="lb1"></div></div>
+<div class="card" style="margin-top:14px"><h3>مراجعة الأخطاء</h3><div id="wr"></div></div>
+<div class="nav" style="flex-wrap:wrap"><button class="btn" id="rq">إعادة الاختبار</button><button class="btn gh" data-go="3">مراجعة الدرس</button><button class="btn gh" id="rj">إعادة الرحلة التعليمية</button><button class="btn gh" data-go="0">العودة إلى الصفحة الرئيسية</button></div>
+</section>
+
+<section class="scr" id="s8">
+<h2>📖 صفحة التعليمات</h2>
+<p class="lead">دليل استخدام المنصة: كل صفحة فين، هتعمل فيها إيه، وتجاوب على إيه عشان تنتقل للي بعدها.</p>
+<div class="card"><h3>🧭 روح مباشرة لـ</h3>
+<div class="qj"><button class="chip" data-go="2">🎯 الأهداف</button><button class="chip" data-go="3">📚 الشرح (الدرس)</button><button class="chip" data-go="4">🔬 الخط الزمني</button><button class="chip" data-go="5">🎮 اللعبة</button><button class="chip" data-go="6">📝 الاختبار</button><button class="chip" data-go="7">🏁 النتيجة</button></div>
+<p class="lead" style="font-size:13px">لو الصفحة لسه مقفولة، هتظهر لك رسالة بتقول تكمّل إيه الأول (الشرط مكتوب في الجدول تحت).</p></div>
+
+<div class="card" style="margin-top:14px"><h3>🗺️ خريطة الرحلة والمطلوب في كل صفحة</h3>
+<div class="tbl"><table><tr><th>الرقم</th><th>الصفحة</th><th>المطلوب منك عشان تنتقل</th></tr>
+<tr><td>1</td><td>الغلاف (الصفحة الرئيسية)</td><td>اضغط «ابدأ الرحلة التعليمية».</td></tr>
+<tr><td>2</td><td>التسجيل</td><td>اكتب اسمك واضغط «تسجيل الدخول والبدء». من غير اسم مش هتقدر تفتح أي صفحة بعدها.</td></tr>
+<tr><td>3</td><td>الأهداف</td><td>اقرأ الأهداف (العام والمعرفية والوجدانية والمهارية) واضغط «ابدأ تعلم الدرس». مفيش أسئلة هنا.</td></tr>
+<tr><td>4</td><td>الشرح (الدرس)</td><td>افتح النقاط التسع واحدة واحدة بالضغط على عنوانها. جرّب سؤال «💡 سؤال سريع» في كل نقطة (مش بيتحسب عليك). بعدها اضغط «شاهد الخط الزمني».</td></tr>
+<tr><td>5</td><td>الخط الزمني</td><td>شغّل الخط الزمني أو اضغط الأرقام. مفيش درجات. بعدها اضغط «هيا نلعب ونتعلم».</td></tr>
+<tr><td>6</td><td>اللعبة</td><td><b>لازم تكمّل المراحل التلاتة كلها</b> عشان يتفتح الاختبار.</td></tr>
+<tr><td>7</td><td>الاختبار</td><td><b>لازم تجاوب وتضغط «تسليم الاختبار»</b> عشان تتفتح صفحة النتيجة.</td></tr>
+<tr><td>8</td><td>النتيجة</td><td>شوف درجتك، والأخطاء، وترتيبك في لوحة الصدارة.</td></tr></table></div>
+<p class="lead" style="font-size:13px">الأرقام من 1 لـ 8 في الشريط الأعلى هي نفس ترتيب الصفحات دي. الرقم الأخضر المفتوح هو الصفحة اللي إنت فيها، والرقم اللي له إطار أخضر صفحة زرتها قبل كده.</p></div>
+
+<div style="margin-top:14px">
+<details open><summary>🔝 الشريط العلوي والتبويبات</summary><ul>
+<li><b>🏠 الصفحة الرئيسية:</b> بترجعك لغلاف المنصة. تقدمك محفوظ، وزر البداية هناك بيتحول لـ«كمّل رحلتك».</li>
+<li><b>📚 المحتوى:</b> بترجعك لآخر صفحة كنت فيها من الرحلة (الأهداف، الشرح، المحاكاة، اللعبة، الاختبار، النتيجة).</li>
+<li><b>📖 التعليمات:</b> الصفحة دي. لو دخلتها من النص، المحتوى بيرجعك لمكانك بالظبط.</li>
+<li><b>الأرقام 1–8:</b> بتنقلك مباشرة لأي صفحة بشرط تكون فتحتها بالترتيب (اللعبة قبل الاختبار، والاختبار قبل النتيجة).</li>
+<li><b>🎵:</b> تشغيل أو إيقاف الموسيقى الهادية. <b>➖ / ➕:</b> خفض ورفع الصوت (من 0 لـ 10).</li>
+<li><b>☀️ / 🌙:</b> التبديل بين الوضع الداكن والفاتح.</li></ul></details>
+
+<details><summary>🎯 الأهداف والشرح (الصفحتان 3 و 4)</summary><ul>
+<li>الأهداف في صفحة «درس الدولة الإسلامية»، وبتقرأها وبس.</li>
+<li>الشرح في صفحة «المحتوى العلمي»: 9 نقاط (الدولة الأموية، معاوية، عبد الملك، الوليد، عمر بن عبد العزيز، سقوط الأمويين، بداية العباسية، الرشيد والمأمون والمعتصم، سقوط العباسية). اضغط على عنوان النقطة تفتح أو تقفل.</li>
+<li>زر <b>الإجابة</b> جنب كل سؤال سريع بيظهر الإجابة الصح.</li>
+<li>زر <b>السابق</b> و<b>التالي</b> (اسمه بيتغير حسب الصفحة) تحت كل صفحة للتنقل خطوة خطوة.</li></ul></details>
+
+<details><summary>🔬 الخط الزمني (الصفحة 5)</summary><ul>
+<li>الجملة فوق الأزرار بتشرح لك اللي بيحصل للقمر لحظة بلحظة.</li>
+<li><b>تشغيل الخط الزمني:</b> بينقلك تلقائيًا من خليفة للي بعده. <b>إيقاف:</b> يوقفه مكانه. <b>إعادة من البداية:</b> يرجّعك للأول.</li>
+<li><b>السرعة:</b> اسحب المؤشر (1 بطيء، 5 سريع).</li>
+<li><b>القائمة (كل العصور / الأموي / العباسي):</b> بتعرض خلفاء العصر اللي تختاره بس.</li>
+<li><b>الأرقام:</b> اضغط أي رقم تروح للخليفة أو الحدث مباشرة.</li></ul></details>
+
+<details><summary>🎮 اللعبة (الصفحة 6)</summary><ul>
+<li><b>المرحلة 1 (10 نقاط):</b> اضغط العصور بالترتيب: الراشدة ثم الأموية ثم العباسية. لو غلطت الترتيب بيتمسح وبتحاول تاني. زر «مسح» بيبدأ الترتيب من الأول.</li>
+<li><b>المرحلة 2 (حتى 30 نقطة):</b> 3 أدلة، اختار الخليفة المناسب لكل دليل. بتاخد 10 نقاط لو جاوبت صح من أول مرة. لو غلطت بيظهر تلميح.</li>
+<li><b>المرحلة 3 (20 نقطة):</b> رتّب الخلفاء العباسيين بأزرار ▲ ▼ واضغط «تحقق من الترتيب».</li>
+<li>مفيش انتقال لمرحلة جديدة غير لما تجاوب الحالية صح. لما تخلص التلات مراحل بيتفتح الاختبار، وتقدر تعيد اللعبة بزر «إعادة اللعبة».</li></ul></details>
+
+<details><summary>📝 الاختبار النهائي (الصفحة 7)</summary><ul>
+<li>17 سؤال: اختيار من متعدد، صح وخطأ، وسؤالين ترتيب.</li>
+<li>اضغط على الإجابة اللي تختارها، وممكن تغيّرها قبل التسليم. الأرقام الدايرية فوق بتوريك الأسئلة اللي جاوبتها (باللون الأخضر)، وبتنقلك لأي سؤال.</li>
+<li><b>التالي / السابق:</b> للتنقل بين الأسئلة. في آخر سؤال الزر بيتحول لـ <b>تسليم الاختبار</b>.</li>
+<li>لو فيه أسئلة لسه ما جاوبتهاش، هتظهر لك أرقامها، واضغط تسليم تاني لو متأكد.</li>
+<li><b>العودة للعبة:</b> بترجعك للعبة من غير ما تخسر إجاباتك.</li></ul></details>
+
+<details><summary>🏁 النتيجة (الصفحة 8)</summary><ul>
+<li>بتشوف درجتك من 100، وعدد الإجابات الصح والغلط، ونقاط اللعبة، ونسبة إكمال الرحلة.</li>
+<li>«أجزاء تستحق المراجعة» بتقولك تراجع أنهي نقطة من الشرح، و«مراجعة الأخطاء» بتوريك الإجابة الصح لكل سؤال غلطت فيه.</li>
+<li><b>إعادة الاختبار:</b> اختبار جديد. <b>مراجعة الدرس:</b> بترجعك للشرح. <b>إعادة الرحلة التعليمية:</b> بتصفّر نقاطك ودرجتك وتبدأ من الأهداف. <b>العودة إلى الصفحة الرئيسية:</b> للغلاف.</li></ul></details>
+
+<details><summary>💾 الحفظ ولوحة الصدارة</summary><ul>
+<li>اسمك وتقدمك ودرجاتك بيتحفظوا على جهازك تلقائيًا، ومفيش كلمة مرور.</li>
+<li>لوحة الصدارة بتترتب بمجموع نقاط اللعبة ودرجة الاختبار، وبتتحسب أعلى نتيجة ليك. لو المنصة مش بتدعم اللوحة المشتركة هتشوف نتيجتك إنت بس.</li></ul></details>
+</div>
+<div class="nav"><button class="btn" id="ret">العودة لمكاني في الرحلة</button></div>
+</section>
+</main>
+<div id="toast" role="status"></div>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const NAMES=['الغلاف','التسجيل','الأهداف','الدرس','الخط الزمني','اللعبة','الاختبار','النتيجة'];
+let S={name:'',theme:'dark',v:[0],g:{s:[0,0,0],pts:0,ok:0},q:null};
+try{Object.assign(S,JSON.parse(localStorage.getItem('lunar')||'{}'))}catch(e){}
+const save=()=>{try{localStorage.setItem('lunar',JSON.stringify(S))}catch(e){}};
+const shuf=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+function toast(t){const e=$('#toast');e.textContent=t;e.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(()=>e.style.display='none',2600)}
+function theme(t){S.theme=t;document.body.dataset.theme=t;document.documentElement.dataset.theme=t;save()}
+$('#th').onclick=()=>theme(S.theme==='dark'?'light':'dark');theme(S.theme);
+
+// moon icons
+function moonSvg(k,sz=90){const c={total:'#a8472d',part:'#e9e3d2',pen:'#d6d0be'}[k];let x=`<svg class="mo" width="${sz}" height="${sz}" viewBox="0 0 100 100"><defs><clipPath id="h${k}"><rect x="0" y="0" width="52" height="100"/></clipPath></defs><circle cx="50" cy="50" r="40" fill="${c}"/>`;
+if(k==='part')x+='<circle cx="50" cy="50" r="40" fill="#2a1a18" clip-path="url(#hpart)"/>';if(k==='pen')x+='<circle cx="50" cy="50" r="40" fill="#000" opacity=".2"/>';return x+'</svg>'}
+
+// navigation
+let cur=0,lastC=2;
+function go(i){
+ if(i>=2&&!S.name){toast('اكتب اسمك الأول عشان نبدأ');i=1}
+ if(i>=6&&i<8&&!S.g.s.every(Boolean)){toast('كمّل مراحل اللعبة الثلاث الأول');i=5}
+ if(i===7&&!S.q){toast('سلّم الاختبار الأول');i=6}
+ if(i>=2&&i<8)lastC=i;
+ cur=i;$$('.scr').forEach((s,k)=>s.classList.toggle('on',k===i));
+ if(i<8&&!S.v.includes(i))S.v.push(i);save();drawSteps();
+ $('#tabs').classList.toggle('show',i>=2);$$('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===(i===8?'i':i>=2?'c':'h')));
+ if(i===0){const c=$('#cb');c.dataset.go=S.name?2:1;c.textContent=S.name?`كمّل رحلتك يا ${S.name}`:'ابدأ الرحلة التعليمية'}
+ if(i===2)$('#hi').textContent=`أهلًا بك يا ${S.name}، هل أنت مستعد لاكتشاف الدولة الإسلامية في العصرين الأموي والعباسي؟`;
+ if(i===1)$('#nm').value=S.name||'';
+ if(i===5)drawGame();if(i===6&&!QZ)startQuiz();if(i===7)showResult();if(i!==4)stopSim();
+ scrollTo({top:0})}
+function drawSteps(){$('#steps').innerHTML=NAMES.map((n,k)=>`<button data-go="${k}" title="${n}" class="${k===cur?'on':S.v.includes(k)?'vis':''}" aria-label="${n}">${k+1}</button>`).join('')}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(b)go(+b.dataset.go)});
+$$('.scr[data-next]').forEach(s=>{const i=+s.id.slice(1);const n=document.createElement('div');n.className='nav';n.innerHTML=`<button class="btn gh" data-go="${i-1}">السابق</button><button class="btn" data-go="${i+1}">${s.dataset.next}</button>`;s.append(n)});
+
+$('#tabC').onclick=()=>go(lastC);$('#ret').onclick=()=>go(lastC);
+// login
+$('#login').onclick=()=>{const v=$('#nm').value.trim();if(!v){$('#nerr').textContent='من فضلك اكتب اسمك قبل ما نكمل.';$('#nm').focus();return}
+ $('#nerr').textContent='';S.name=v;save();toast(`أهلًا بك يا ${v}! 🚀`);go(2)};
+$('#nm').addEventListener('keydown',e=>{if(e.key==='Enter')$('#login').click()});
+
+// lesson
+const U=[["الدولة الأموية (٤١–١٣٢هـ)", "قامت الدولة الأموية بعد انتهاء عصر الخلفاء الراشدين، وامتد حكمها حوالي ٩١ عامًا. اتسعت فيها الفتوحات، وتطور نظام الحكم والإدارة، وازدهرت العلوم والعمارة.", "كم عامًا امتد حكم الدولة الأموية؟ (حوالي ٩١ عامًا)", ["🕌 العاصمة دمشق", "⚔️ اتساع الفتوحات", "🏛️ تطور الإدارة", "📚 ازدهار العلوم والعمارة"]], ["معاوية بن أبي سفيان (٤١–٦٠هـ)", "أول خلفاء الدولة الأموية. من أعماله: اتخذ دمشق عاصمة للأمويين، واهتم بالبحرية الإسلامية، وأنشأ مدينة القيروان لنشر الإسلام في شمال إفريقيا، وأسس ديوان الخاتم لحماية رسائل الدولة من التزوير.", "ما المدينة التي أنشأها معاوية في شمال إفريقيا؟ (القيروان)", ["🏙️ دمشق عاصمة", "⚓ البحرية الإسلامية", "🕌 القيروان", "📜 ديوان الخاتم"]], ["عبد الملك بن مروان (٦٥–٨٦هـ)", "استقرت الدولة الإسلامية في عهده بعد فترة من الفوضى والصراعات. من أعماله: سك أول عملة إسلامية، وأمر بنقط المصحف لتسهيل قراءة القرآن الكريم، وشيّد مسجد قبة الصخرة في فلسطين، وعرّب الدواوين للغة العربية.", "ما فائدة نقط المصحف الشريف؟ (تسهيل قراءة القرآن الكريم)", ["💰 أول عملة إسلامية", "📖 نقط المصحف", "🕌 قبة الصخرة", "📝 تعريب الدواوين"]], ["الوليد بن عبد الملك (٨٦–٩٦هـ)", "تميز عهده بالرخاء الاقتصادي وانتشار الأمن والاستقرار. واصل الفتوحات شرقًا إلى بلاد السند وغربًا إلى بلاد الأندلس، وبلغت الدولة أقصى اتساعها. أعاد بناء المسجد النبوي ووسّع الحرم المكي، وشيّد المسجد الأموي في دمشق.", "أين شيّد الوليد المسجد الأموي؟ (في دمشق)", ["🌍 السند والأندلس", "🕌 المسجد الأموي", "🕋 توسعة الحرم المكي", "💎 رخاء واستقرار"]], ["عمر بن عبد العزيز (٩٩–١٠١هـ)", "أُطلق عليه خامس الخلفاء الراشدين لعدله وزهده وحرصه على مصلحة الأمة. اختار القضاة والولاة ممن عُرفوا بحسن السيرة والعدل، ونشر الإسلام بالقدوة والموعظة الحسنة، واهتم بالعلم والعلماء وشيّد المدارس. وفي خلافته لم يكن هناك فقراء، حتى إن عمّال الزكاة لم يجدوا من يأخذها.", "لماذا يُعد عمر بن عبد العزيز قدوة في الحكم؟ (لعدله وزهده وحرصه على مصلحة الأمة)", ["⚖️ العدل", "🌿 الزهد", "🏫 بناء المدارس", "🤝 اختيار الولاة الصالحين"]], ["أسباب ضعف وسقوط الدولة الأموية", "١) تولي خلفاء ضعفاء في أواخر عهدها. ٢) كثرة الصراعات بين القبائل العربية على السلطة. ٣) ظهور الدعوة العباسية على يد أبي مسلم الخراساني. وقامت الدولة العباسية بعد هزيمة الأمويين في معركة الزاب الكبرى عام ١٣٢هـ.", "ما المعركة التي هُزم فيها الأمويون؟ (معركة الزاب الكبرى)", ["👑 خلفاء ضعفاء", "⚔️ صراع القبائل", "📣 الدعوة العباسية", "🏁 معركة الزاب ١٣٢هـ"]], ["بداية الدولة العباسية (١٣٢–٦٥٦هـ)", "تنقسم إلى عصرين: الأول (الذهبي) بقوة الخلفاء وازدهار العلوم والثقافة، والثاني عصر الضعف والانقسام. أبو العباس عبد الله (١٣٢–١٣٦هـ) وضع أسس الدولة ونقل العاصمة إلى الأنبار. وأبو جعفر المنصور (١٣٦–١٥٨هـ) هو المؤسس الحقيقي، قضى على الثورات ونشر الأمن وبنى بغداد وجعلها عاصمة الخلافة.", "من المؤسس الحقيقي للدولة العباسية؟ (أبو جعفر المنصور)", ["🌟 العصر الذهبي", "🏗️ الأنبار", "🏙️ بناء بغداد", "🛡️ القضاء على الثورات"]], ["الرشيد والمأمون والمعتصم", "هارون الرشيد (١٧٠–١٩٣هـ) أشهر الخلفاء العباسيين، أسس بيت الحكمة وسوق الوراقين وأقام علاقات قوية مع ملوك أوروبا. المأمون (١٩٨–٢١٨هـ) شجع ترجمة الكتب ودعم العلماء وأنشأ أول مرصد فلكي. المعتصم (٢١٨–٢٢٧هـ) بنى جيشًا قويًا وأنشأ سامراء وفتح عمورية.", "من أسس مكتبة بيت الحكمة؟ (هارون الرشيد)", ["📚 بيت الحكمة", "🔭 أول مرصد فلكي", "🌐 حركة الترجمة", "🏰 سامراء وعمورية"]], ["سقوط الدولة العباسية", "١) الصراع بين الأمراء العباسيين على الحكم. ٢) ضعف الخلفاء في نهاية العصر العباسي الثاني. ٣) سيطرة العناصر غير العربية على نظم الحكم. وأدى ذلك إلى سقوطها على يد المغول سنة ٦٥٦هـ بعد أن استمرت أكثر من خمسة قرون. وتعلمنا أن التقدم يأتي من خلال العدل والاجتهاد.", "متى سقطت الدولة العباسية؟ (سنة ٦٥٦هـ)", ["⚔️ صراع الأمراء", "📉 ضعف الخلفاء", "🔄 سيطرة غير العرب", "🐎 غزو المغول ٦٥٦هـ"]]];
+const IN=U.map(u=>()=>`<div class="inf" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;text-align:center">${u[3].map(c=>`<div class="card" style="padding:8px">${c}</div>`).join('')}</div>`);
+$('#units').innerHTML=U.map((u,i)=>`<details ${i?'':'open'}><summary>نقطة رقم ${i+1}: ${u[0]}</summary>${'<p>'+u[1]+'</p>'}${IN[i]()}<p>💡 سؤال سريع: ${u[2].split('(')[0]}<button class="btn gh" style="padding:4px 12px;font-size:13px;margin-inline-start:8px" onclick="this.outerHTML='<b>${u[2].split('(')[1].replace(')','')}</b>'">الإجابة</button></p></details>`).join('');
+
+// timeline simulation
+const T=[['معاوية بن أبي سفيان','٤١–٦٠هـ','أموي','أول خلفاء الأمويين، اتخذ دمشق عاصمة وأنشأ القيروان.'],['عبد الملك بن مروان','٦٥–٨٦هـ','أموي','سك أول عملة إسلامية ونقط المصحف وبنى قبة الصخرة.'],['الوليد بن عبد الملك','٨٦–٩٦هـ','أموي','بلغت الدولة أقصى اتساعها، وشيّد المسجد الأموي.'],['عمر بن عبد العزيز','٩٩–١٠١هـ','أموي','خامس الخلفاء الراشدين لعدله وزهده.'],['أبو العباس عبد الله','١٣٢–١٣٦هـ','عباسي','وضع أسس الدولة العباسية ونقل العاصمة إلى الأنبار.'],['أبو جعفر المنصور','١٣٦–١٥٨هـ','عباسي','المؤسس الحقيقي، بنى بغداد.'],['هارون الرشيد','١٧٠–١٩٣هـ','عباسي','أسس بيت الحكمة وسوق الوراقين.'],['المأمون','١٩٨–٢١٨هـ','عباسي','شجع الترجمة وأنشأ أول مرصد فلكي.'],['المعتصم بالله','٢١٨–٢٢٧هـ','عباسي','أنشأ سامراء وفتح عمورية.'],['سقوط بغداد','٦٥٦هـ','عباسي','سقطت الدولة العباسية على يد المغول.']];
+let ti=0,tm=0;const fl=()=>T.map((x,i)=>i).filter(i=>{const e=$('#typ').value;return e==='all'||T[i][2]===e});
+function draw(){$('#dots').innerHTML=T.map((x,i)=>`<button class="chip ${i===ti?'on':''}" data-t="${i}" style="${$('#typ').value!=='all'&&x[2]!==$('#typ').value?'opacity:.3':''}">${i+1}</button>`).join('');
+ const x=T[ti];$('#tc').innerHTML=`<span class="chip">${x[2]==='أموي'?'🌙 العصر الأموي':'🕌 العصر العباسي'}</span><h3>${x[0]}</h3><p class="lead">${x[1]}</p><p>${x[3]}</p>`;$('#say').textContent=`المحطة ${ti+1} من ${T.length}`}
+function stopSim(){clearInterval(tm);tm=0}
+function step(){const a=fl();const k=a.indexOf(ti);if(k<0||k>=a.length-1){stopSim();return}ti=a[k+1];draw()}
+$('#play').onclick=()=>{stopSim();const a=fl();if(!a.includes(ti)||ti===a[a.length-1])ti=a[0];draw();tm=setInterval(step,5000/+$('#spd').value)};
+$('#pause').onclick=stopSim;$('#rst').onclick=()=>{stopSim();ti=fl()[0];draw()};
+$('#typ').onchange=()=>{stopSim();ti=fl()[0];draw()};
+$('#dots').onclick=e=>{const b=e.target.closest('[data-t]');if(b){stopSim();ti=+b.dataset.t;draw()}};
+draw();
+
+// ordering widget
+function ordList(el,arr,done){el.innerHTML=arr.map((a,i)=>`<li><span>${i+1}. ${a}</span><button class="ic" data-m="${i},-1" aria-label="لأعلى">▲</button><button class="ic" data-m="${i},1" aria-label="لأسفل">▼</button></li>`).join('');
+ el.onclick=e=>{const b=e.target.closest('[data-m]');if(!b)return;const[i,d]=b.dataset.m.split(',').map(Number),j=i+d;if(j<0||j>=arr.length)return;[arr[i],arr[j]]=[arr[j],arr[i]];ordList(el,arr,done);done&&done()}}
+const PHS=['أبو العباس عبد الله','أبو جعفر المنصور','هارون الرشيد','المأمون','المعتصم بالله'];
+const mixed=a=>{let m;do m=shuf(a);while(m.every((x,i)=>x===a[i]));return m};
+
+// game
+let gi=0,seq=[],g2=0,g2t=0,g3=null;
+function drawGame(){const done=S.g.s.filter(Boolean).length;$('#gp').style.width=done/3*100+'%';
+ $('#gsum').textContent=`النقاط: ${S.g.pts} — الإجابات الصحيحة: ${S.g.ok} — المرحلة ${Math.min(gi+1,3)} من 3`;
+ const b=$('#gbox');gi=S.g.s.findIndex(x=>!x);
+ if(gi<0){pushScore();b.innerHTML=`<div style="text-align:center"><div style="font-size:3rem">⭐⭐⭐</div><h3>أحسنت يا ${S.name}!</h3><p class="lead">أكملت المراحل الثلاث. نقاطك: ${S.g.pts}، وإجاباتك الصحيحة: ${S.g.ok}.</p><button class="btn" data-go="6">انتقل إلى الاختبار النهائي</button> <button class="btn gh" id="gre">إعادة اللعبة</button></div>`;$('#gre').onclick=()=>{S.g={s:[0,0,0],pts:0,ok:0};g2=0;seq=[];g3=null;save();drawGame()};return}
+ if(gi===0){b.innerHTML=`<h3>المرحلة 1: رتّب العصور التاريخية</h3><p class="lead">اضغط العصور بالترتيب من الأقدم للأحدث.</p><p style="font-size:1.4rem;min-height:40px">${seq.join(' ← ')||'…'}</p><div style="display:flex;gap:8px;flex-wrap:wrap">${['🕋 الخلافة الراشدة','🌙 الدولة الأموية','🕌 الدولة العباسية'].map(c=>`<button class="chip" ${seq.includes(c)?'disabled':''}>${c}</button>`).join('')}<button class="btn gh" id="gc">مسح</button></div><p class="say" id="gm"></p>`;
+  b.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{seq.push(c.textContent);if(seq.length<3)return drawGame();
+   if(seq[0].includes('الراشدة')&&seq[1].includes('الأموية')&&seq[2].includes('العباسية')){S.g.s[0]=1;S.g.pts+=10;S.g.ok++;seq=[];save();toast('رائع! ترتيب صحيح 🎉');drawGame()}else{seq=[];drawGame();$('#gm').textContent='تلميح: بعد الخلفاء الراشدين قامت الدولة الأموية ثم العباسية.'}});
+  $('#gc').onclick=()=>{seq=[];drawGame()}}
+  else if(gi===1){const K=[['a','معاوية بن أبي سفيان','أول خلفاء الأمويين واتخذ دمشق عاصمة.','اتخذ دمشق عاصمة وأسس ديوان الخاتم.'],['b','أبو جعفر المنصور','المؤسس الحقيقي للدولة العباسية وبانِي بغداد.','بنى مدينة بغداد وجعلها عاصمة الخلافة.'],['c','المأمون','اهتم بالعلم والفلك وأنشأ أول مرصد.','اهتم بالفلك وأنشأ أول مرصد فلكي.']];
+  const k=K[g2];b.innerHTML=`<h3>المرحلة 2: من هو الخليفة (${g2+1}/3)</h3><p class="say" style="font-size:1.1rem">🔎 ${k[3]}</p>${shuf(K).map(o=>`<button class="opt" data-k="${o[0]}">${o[1]}</button>`).join('')}<p class="say" id="gm"></p>`;
+  b.querySelectorAll('.opt').forEach(o=>o.onclick=()=>{if(o.dataset.k===k[0]){if(!g2t){S.g.pts+=10;S.g.ok++}g2t=0;toast('صح! '+k[2]);if(++g2>=3){S.g.s[1]=1}save();drawGame()}else{g2t=1;o.classList.add('no');$('#gm').textContent='حاول تاني. تلميح: '+k[2]}})}
+ else{if(!g3)g3=mixed(PHS);b.innerHTML=`<h3>المرحلة 3: تحدي الخلفاء العباسيين</h3><p class="lead">رتّب الخلفاء العباسيين من الأقدم للأحدث.</p><ol class="ord" id="go"></ol><button class="btn" id="gk">تحقق من الترتيب</button><p class="say" id="gm"></p>`;ordList($('#go'),g3);
+  $('#gk').onclick=()=>{if(g3.every((x,i)=>x===PHS[i])){S.g.s[2]=1;S.g.pts+=20;S.g.ok++;save();toast('ترتيب ممتاز! 🌟');drawGame()}else $('#gm').textContent='لسه فيه ترتيب غلط. تلميح: ابدأ بأبي العباس السفاح وانتهِ بالمعتصم.'}}}
+
+// quiz
+const MC=[['ما عاصمة الدولة الإسلامية في العصر الأموي؟','دمشق','المدينة','الكوفة','اتخذ معاوية دمشق عاصمة للأمويين.',1],
+['من الخليفة الذي بنى مدينة بغداد؟','أبو جعفر المنصور','الوليد بن عبد الملك','مروان بن محمد','بناها المنصور وجعلها عاصمة الخلافة.',6],
+['قام الخليفة ........ ببناء مدينة سامراء.','المعتصم بالله','الأمين','أبو العباس','أنشأها المعتصم لتكون مقرًا للخلافة.',7],
+['من قام بتعريب الدواوين في الدولة الإسلامية؟','عبد الملك بن مروان','معاوية بن أبي سفيان','عمر بن عبد العزيز','عرّب عبد الملك الدواوين للغة العربية.',2],
+['من لُقّب بخامس الخلفاء الراشدين؟','عمر بن عبد العزيز','الوليد بن عبد الملك','معاوية بن أبي سفيان','لعدله وزهده وحرصه على مصلحة الأمة.',4],
+['من الخليفة الذي أنشأ أول مرصد فلكي؟','المأمون','هارون الرشيد','أبو جعفر المنصور','اهتم المأمون بالعلوم والفلك.',7],
+['من الذي شيّد المسجد الأموي في دمشق؟','الوليد بن عبد الملك','عبد الملك بن مروان','معاوية بن أبي سفيان','شيّده الوليد، وبلغت الدولة في عهده أقصى اتساعها.',3],
+['ما الذي أدى إلى سقوط الدولة العباسية نهائيًا؟','هجوم المغول على بغداد سنة ٦٥٦هـ','معركة الزاب الكبرى','فتح عمورية','سقطت بغداد في يد المغول.',8],
+['من أسس مكتبة بيت الحكمة في بغداد؟','هارون الرشيد','عبد الملك بن مروان','معاوية بن أبي سفيان','أسسها الرشيد ودعمها المأمون.',7],
+['كم عامًا تقريبًا امتد حكم الدولة الأموية؟','حوالي ٩١ عامًا','حوالي ٣٠ عامًا','أكثر من ٥ قرون','من ٤١ إلى ١٣٢هـ.',0]];
+const TF=[['كان لأبي مسلم الخراساني دور في نجاح قيام الدولة العباسية.',1,'قاد الدعوة العباسية من خراسان.',5],['قام الخليفة العباسي هارون الرشيد بإنشاء سوق الوراقين.',1,'أنشأه الرشيد لنسخ الكتب وبيعها.',7],['استمرت الدولة العباسية أكثر من ستة قرون.',0,'استمرت أكثر من خمسة قرون (١٣٢–٦٥٦هـ).',8],['ازدهرت حركة الترجمة في العصر العباسي الثاني.',0,'ازدهرت في العصر العباسي الأول (الذهبي).',6],['قامت الدولة العباسية بعد هزيمة الأمويين في معركة الزاب الكبرى.',1,'كانت المعركة عام ١٣٢هـ.',5]];
+const IM=[];
+const O1=['معاوية بن أبي سفيان','عبد الملك بن مروان','الوليد بن عبد الملك','عمر بن عبد العزيز'];
+let QZ=null,qi=0;
+function startQuiz(){QZ=[...MC.map(m=>({k:'mc',q:m[0],c:m[1],o:shuf(m.slice(1,4)),e:m[4],u:m[5],a:null})),...TF.map(m=>({k:'mc',q:m[0],c:m[1]?'صح':'خطأ',o:['صح','خطأ'],e:m[2],u:m[3],a:null,tf:1})),...IM.map(m=>({k:'img',m:m[0],q:'ما اسم الخليفة؟',c:m[1],o:shuf(TY),e:'نوعها: '+m[1],u:m[2],a:null})),{k:'ord',q:'رتّب الخلفاء الأمويين زمنيًا من الأول للآخر',it:O1,a:mixed(O1),e:'الترتيب: '+O1.join(' ← '),u:1},{k:'ord',q:'رتّب الخلفاء العباسيين زمنيًا من الأول للآخر',it:PHS,a:mixed(PHS),e:'الترتيب: '+PHS.join(' ← '),u:6}];
+ QZ.forEach(z=>{if(z.tf)z.o=['صح','خطأ']});qi=0;drawQ()}
+function drawQ(){const z=QZ[qi],n=QZ.length;$('#qn').textContent=`${S.name} — السؤال ${qi+1} من ${n}`;$('#qp').style.width=(qi+1)/n*100+'%';
+ $('#qd').innerHTML=QZ.map((q,i)=>`<button class="${q.a!==null?'an':''} ${i===qi?'cur':''}" data-q="${i}">${i+1}</button>`).join('');
+ let h=`<h3>${z.q}</h3>`;if(z.k==='img')h+=`<div style="text-align:center">${moonSvg(z.m,120)}</div>`;
+ if(z.k==='ord')h+='<ol class="ord" id="qo"></ol>';else h+=z.o.map(o=>`<button class="opt ${z.a===o?'sel':''}">${o}</button>`).join('');
+ $('#qb').innerHTML=h;if(z.k==='ord')ordList($('#qo'),z.a);else $$('#qb .opt').forEach(b=>b.onclick=()=>{z.a=b.textContent;drawQ()});
+ $('#qprev').disabled=!qi;$('#qnext').textContent=qi===n-1?'تسليم الاختبار':'التالي';$('#qwarn').textContent=''}
+$('#qd').onclick=e=>{const b=e.target.closest('[data-q]');if(b){qi=+b.dataset.q;drawQ()}};
+$('#qprev').onclick=()=>{qi--;drawQ()};
+let warned=0;
+$('#qnext').onclick=()=>{if(qi<QZ.length-1){qi++;warned=0;return drawQ()}
+ const un=QZ.map((z,i)=>z.a===null?i+1:0).filter(Boolean);if(un.length&&!warned){warned=1;$('#qwarn').textContent='لسه مجاوبتش: '+un.join('، ')+' — اضغط تسليم تاني لو متأكد.';return}
+ warned=0;const wrong=[];let ok=0;QZ.forEach(z=>{const r=z.k==='ord'?z.a.every((x,i)=>x===z.it[i]):z.a===z.c;if(r)ok++;else wrong.push(z)});
+ const sc=Math.round(ok/QZ.length*100);S.q={score:sc,ok,wr:QZ.length-ok,wrong:wrong.map(z=>[z.q,z.k==='ord'?z.e:'الإجابة الصحيحة: '+z.c+' — '+z.e,z.u])};save();pushScore();go(7)};
+function showResult(){const q=S.q;if(!q)return;const G=[[90,'ممتاز! فهمك للدرس رائع 🌟','🏆'],[75,'جيد جدًا! أنت قريب من الإتقان 👏','🎉'],[50,'جيد، وفيه أجزاء بسيطة تستحق المراجعة 💪','📜'],[0,'بداية طيبة! راجع الدرس وجرب تاني، وأنت قادر على التحسن 🚀','🔭']].find(g=>q.score>=g[0]);
+ $('#rn').textContent=S.name;$('#rs').textContent=q.score+' / 100';$('#rm').textContent=G[1];$('#cel').textContent=G[2];$('#rev').textContent=G[1];
+ $('#rstats').innerHTML=[['✅ الإجابات الصحيحة',q.ok],['❌ الإجابات الخاطئة',q.wr],['📊 النسبة المئوية',q.score+'%'],['⭐ نقاط اللعبة',S.g.pts],['🧭 إكمال الرحلة',Math.round(S.v.length/8*100)+'%']].map(x=>`<div class="card" style="text-align:center"><b>${x[0]}</b><div class="big" style="font-size:2rem">${x[1]}</div></div>`).join('');
+ const us=[...new Set(q.wrong.map(w=>w[2]))];$('#rec').textContent=us.length?'راجع: '+us.map(i=>U[i][0]).join('، '):'مفيش حاجة تحتاج مراجعة، شغل ممتاز!';
+ $('#wr').innerHTML=q.wrong.length?q.wrong.map(w=>`<p><b>${w[0]}</b><br><span class="lead">${w[1]}</span></p>`).join(''):'<p class="lead">كل إجاباتك صحيحة 🎉</p>'}
+$('#rq').onclick=()=>{QZ=null;startQuiz();go(6)};
+$('#rj').onclick=()=>{S.g={s:[0,0,0],pts:0,ok:0};S.q=null;S.v=[0];QZ=null;g2=0;seq=[];g3=null;save();go(2)};
+// calm ambient music (generated in the browser)
+if(typeof S.vol!=='number')S.vol=4;
+let AC,master,filt,mT,mOn=false,ci=0;
+const CH=[[73.42,220,277.18,369.99],[61.74,185,246.94,293.66],[49,196,246.94,370],[55,220,277.18,329.63]],PT=[0,1,2,3,2,1,3,2];
+function tone(f,t0,d,ty,pk){const o=AC.createOscillator(),g=AC.createGain();o.type=ty;o.frequency.value=f;g.gain.setValueAtTime(0,t0);g.gain.linearRampToValueAtTime(pk,t0+d*.35);g.gain.linearRampToValueAtTime(0,t0+d);o.connect(g);g.connect(filt);o.start(t0);o.stop(t0+d+.1)}
+function bell(f,t0){const o=AC.createOscillator(),o2=AC.createOscillator(),g=AC.createGain();o.frequency.value=f;o2.frequency.value=f*2.01;g.gain.setValueAtTime(0,t0);g.gain.linearRampToValueAtTime(.08,t0+.02);g.gain.exponentialRampToValueAtTime(.0005,t0+2.4);o.connect(g);o2.connect(g);g.connect(filt);o.start(t0);o2.start(t0);o.stop(t0+2.5);o2.stop(t0+2.5)}
+function chord(){const t=AC.currentTime+.05,c=CH[ci++%4],N=[c[1]*2,c[2]*2,c[3]*2,c[2]*4];c.forEach(f=>tone(f,t,9,'sine',.07));tone(c[1],t,9,'triangle',.02);PT.forEach((k,i)=>{if(Math.random()<.8)bell(N[k],t+i)})}
+function vol(){$('#vol').textContent=S.vol;if(master)master.gain.linearRampToValueAtTime(S.vol/10*.6,AC.currentTime+.2);save()}
+$('#mp').onclick=()=>{if(!mOn){if(!AC){AC=new(window.AudioContext||window.webkitAudioContext)();master=AC.createGain();master.gain.value=0;filt=AC.createBiquadFilter();filt.type='lowpass';filt.frequency.value=3200;filt.connect(master);master.connect(AC.destination)}AC.resume();chord();mT=setInterval(chord,8000);mOn=true;vol()}else{clearInterval(mT);AC.suspend();mOn=false}$('#mp').setAttribute('aria-pressed',mOn);toast(mOn?'الموسيقى شغالة 🎵':'الموسيقى اتوقفت')};
+$('#vp').onclick=()=>{S.vol=Math.min(10,S.vol+1);vol()};$('#vm').onclick=()=>{S.vol=Math.max(0,S.vol-1);vol()};
+$('#vol').textContent=S.vol;
+// leaderboard (shared when the db capability is available, otherwise local)
+let DB=null,UID=null,LB=[];
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function drawBoards(){const rows=DB?LB:(S.bd?[{uid:'me',name:S.name,g:S.bd.g,q:S.bd.q,total:S.bd.total}]:[]);
+ const h=rows.length?`<ol class="ord">${rows.map((r,i)=>`<li style="${(DB?r.uid===UID:true)?'border-color:var(--ac)':''}"><span>${['🥇','🥈','🥉'][i]||(i+1)+'.'} <b>${esc(r.name)}</b></span><small>لعبة ${Number(r.g)||0} + اختبار ${Number(r.q)||0}</small><b>${Number(r.total)||0}</b></li>`).join('')}</ol>`:'<p class="lead">لسه مفيش نتائج. أكمل اللعبة والاختبار وهتظهر هنا.</p>';
+ $$('#lb1,#lb2').forEach(e=>e.innerHTML=h+`<p class="lead" style="font-size:13px">${DB?'الترتيب حسب مجموع نقاط اللعبة + درجة الاختبار (أعلى نتيجة لكل طالب).':'اللوحة المشتركة غير متاحة هنا، فبتظهر نتيجتك على جهازك بس.'}</p>`)}
+function pushScore(){const tot=S.g.pts+(S.q?S.q.score:0);if(!S.bd||tot>S.bd.total)S.bd={g:S.g.pts,q:S.q?S.q.score:0,total:tot};save();drawBoards();
+ if(DB&&UID&&S.name)DB.doc('board/'+UID).set({uid:UID,name:S.name,g:S.bd.g,q:S.bd.q,total:S.bd.total}).catch(()=>{})}
+(async()=>{try{DB=await claude.use('db');const u=await claude.use('user');UID=u?await u.id():null;if(DB&&UID)DB.collection('board').orderBy('total','desc').limit(20).onSnapshot(s=>{LB=s.docs.map(d=>d.data());drawBoards()},()=>{});else DB=null}catch(e){DB=null}drawBoards()})();
+drawBoards();
+drawSteps();go(0);
+</script>
+</body>
+</html>
